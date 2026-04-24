@@ -1,0 +1,40 @@
+{
+  "name": "tredence-fullstack",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -p tsconfig.app.json && vite build",
+    "preview": "vite preview",
+    "type-check": "tsc -p tsconfig.app.json --noEmit",
+    "lint": "eslint src --ext .ts,.tsx --max-warnings 0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "eslint": "^9.0.0",
+    "typescript": "~5.7.0",
+    "vite": "^6.0.0"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.9.0",
+    "@types/dagre": "^0.7.54",
+    "dagre": "^0.8.5",
+    "immer": "^10.1.1",
+    "msw": "^2.7.0",
+    "nanoid": "^5.1.9",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.54.0",
+    "reactflow": "^11.11.4",
+    "zod": "^3.24.0",
+    "zundo": "^2.3.0",
+    "zustand": "^5.0.2"
+  },
+  "msw": {
+    "workerDirectory": ["public"]
+  }
+}
